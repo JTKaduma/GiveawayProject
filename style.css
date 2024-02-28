@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* root styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1, h2, p {
+    margin: 1.6rem 0;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(2.4rem, 3.6rem, 4.8rem);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+/* body styling */
+.countdown-title {
+    margin: 3% 0;
+    text-transform: uppercase;
+}
+
+.countdown-giveaway-info {
+    margin-right: 1%;
+}
+
+.countdown-main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-picture {
+    margin: 5.6rem;
+    flex-basis: 100%;
+}
+
+.presentDate {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.countdown-content p {
+    width: 80%;
+    margin: 4% 0;
+}
+
+/* timer styling */
+.countdown-timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.countdown-timer-single {
+    font-weight: 800;
+    font-size: 2.4rem;
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 7.6rem;
+    aspect-ratio: 1;
+    margin-right: 8%;
+    border-radius: 12% 24%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.countdown-timer-single:last-child {
+    margin-right: 0;
+}
+
+.countdown-timer-single-figure {
+    font-size: 2.4rem;
+}
+
+.countdown-timer-single-info {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+
+/* media queries */
+@media only screen and (max-width: 820px) {
+    body, html {
+        height: auto;
+    }
+    
+    .countdown-main-content {
+        flex-direction: column;
+        padding: 20% 4% 10%;
+    }
+
+    .countdown-picture {
+        margin: 0;
+    }
+
+    .countdown-content p {
+        width: 100%;
+    }
+
+    .countdown-timer-single-info {
+        display: none;
+    }
+}
